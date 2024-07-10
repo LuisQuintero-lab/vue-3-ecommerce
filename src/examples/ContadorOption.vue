@@ -22,6 +22,7 @@ export default {
 </script>
 
 <template>
+    <p>Objetivo llegar a 20 clicks</p>
     <h1> Contador: {{ count }} </h1>
     <button @click="increase">
         Aumentar contador
@@ -29,4 +30,6 @@ export default {
     <button @click="decrease">
         Disminuir contador
     </button>
+    <p v-if="count < 10">Let's go you can do it</p>
+    <p v-else>You almost got it ......</p>
 </template>
