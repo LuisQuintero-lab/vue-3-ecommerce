@@ -26,7 +26,7 @@ export default {
 
 <template>
     <ProductCard 
-    v-for="p in products" 
-    :product="p" 
-    @addProduct="onProductAdded(p.id)"/>
+        v-for="p in products" 
+        :product="p" 
+        v-on:addProduct="onProductAdded(p.id)"/> <!-- on previous change we have @ that abreviates v-on as a shorthand -->
 </template>

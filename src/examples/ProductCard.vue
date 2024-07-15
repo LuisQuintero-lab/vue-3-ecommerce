@@ -21,7 +21,7 @@ export default {
 <template>
     <p>Name: {{ product.name }}</p>
     <p>Price: {{ product.price }}</p>
-    <button @click="onAddButtonClick">
+    <button v-on:click="onAddButtonClick"> <!-- this is another example of a short hand where im using @ instead of v-on -->
         Agregar al carrito
     </button>
     <hr />
